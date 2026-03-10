@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rubik's Cube Tutorial - Learn to Solve Step by Step</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🟦</text></svg>">
+</head>
+<body>
+  <!-- Mobile Header -->
+  <header class="mobile-header">
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <h1 class="mobile-title">Cube Tutorial</h1>
+    <button class="lang-toggle" id="langToggleMobile" aria-label="Toggle language">
+      <span class="lang-label">עב</span>
+    </button>
+    <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle theme">
+      <span class="theme-icon">🌙</span>
+    </button>
+  </header>
+
+  <!-- Sidebar -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h1 class="logo">🧊 Cube Solver</h1>
+      <button class="lang-toggle desktop-only" id="langToggle" aria-label="Toggle language">
+        <span class="lang-label">עב</span>
+      </button>
+      <button class="theme-toggle desktop-only" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <span class="progress-text" id="progressText">0 / 8 steps</span>
+    </div>
+
+    <!-- Navigation -->
+    <ul class="nav-list" id="navList">
+      <li class="nav-item active" data-step="intro">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-label">Welcome</span>
+      </li>
+      <li class="nav-item" data-step="step1">
+        <span class="nav-number">1</span>
+        <span class="nav-label">The Daisy</span>
+        <span class="nav-check" data-check="step1"></span>
+      </li>
+      <li class="nav-item" data-step="step2">
+        <span class="nav-number">2</span>
+        <span class="nav-label">The White Cross</span>
+        <span class="nav-check" data-check="step2"></span>
+      </li>
+      <li class="nav-item" data-step="step3">
+        <span class="nav-number">3</span>
+        <span class="nav-label">White Corners</span>
+        <span class="nav-check" data-check="step3"></span>
+      </li>
+      <li class="nav-item" data-step="step4">
+        <span class="nav-number">4</span>
+        <span class="nav-label">Middle Layer (ABCs)</span>
+        <span class="nav-check" data-check="step4"></span>
+      </li>
+      <li class="nav-item" data-step="step5">
+        <span class="nav-number">5</span>
+        <span class="nav-label">Yellow Cross</span>
+        <span class="nav-check" data-check="step5"></span>
+      </li>
+      <li class="nav-item" data-step="step6">
+        <span class="nav-number">6</span>
+        <span class="nav-label">Yellow Face</span>
+        <span class="nav-check" data-check="step6"></span>
+      </li>
+      <li class="nav-item" data-step="step7">
+        <span class="nav-number">7</span>
+        <span class="nav-label">Position Corners</span>
+        <span class="nav-check" data-check="step7"></span>
+      </li>
+      <li class="nav-item" data-step="step8">
+        <span class="nav-number">8</span>
+        <span class="nav-label">Final Edges</span>
+        <span class="nav-check" data-check="step8"></span>
+      </li>
+      <li class="nav-divider"></li>
+      <li class="nav-item" data-step="cheatsheet">
+        <span class="nav-icon">📋</span>
+        <span class="nav-label">Cheat Sheet</span>
+      </li>
+    </ul>
+
+    <div class="sidebar-footer">
+      <p>Based on the beginner method from<br><a href="https://easiestsolve.com/videos/" target="_blank" rel="noopener">EasiestSolve.com</a></p>
+    </div>
+  </nav>
+
+  <!-- Overlay for mobile menu -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- Main Content -->
+  <main class="content" id="mainContent">
+    <!-- Content is rendered dynamically by app.js -->
+  </main>
+
+  <script src="js/steps.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/cube.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
